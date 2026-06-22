@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: light; }
+.dark { color-scheme: dark; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 92px; }
+body { margin: 0; min-height: 100vh; font-family: Tahoma, Arial, system-ui, sans-serif; }
+.code-ltr { direction: ltr; text-align: left; unicode-bidi: plaintext; }
+.glass { background: rgba(255,255,255,.78); backdrop-filter: blur(14px); }
+.dark .glass { background: rgba(15,23,42,.74); }
+@media print {
+  .no-print { display: none !important; }
+  body { background: white !important; color: black !important; }
+  .print-card { border: 1px solid #ddd !important; box-shadow: none !important; }
+}
